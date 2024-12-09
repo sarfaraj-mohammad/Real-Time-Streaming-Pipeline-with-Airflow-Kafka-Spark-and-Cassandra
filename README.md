@@ -42,8 +42,8 @@ Ensure you have the following installed:
 
 1.  Clone the Repository
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/sarfaraj-mohammad/Real-Time-Streaming-Pipeline-with-Airflow-Kafka-Spark-and-Cassandra.git
+    cd Real-Time-Streaming-Pipeline-with-Airflow-Kafka-Spark-and-Cassandra
     ```
     
     Initializing the Environment:
