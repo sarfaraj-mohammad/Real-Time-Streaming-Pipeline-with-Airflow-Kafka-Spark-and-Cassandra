@@ -13,5 +13,5 @@ CREATE TABLE IF NOT EXISTS social_network.users(
     city TEXT,
     state TEXT,
     country TEXT,
-    postcode INT
+    postcode TEXT
 );
