@@ -121,7 +121,7 @@ Ensure you have the following installed:
 7.  Verify Data in Cassandra
     - Check if the user data has been successfully written to the Cassandra table:
     ```bash
-    docker exec -it <cassandra-container-name> cqlsh -u cassandra -p cassandra
+    docker exec -it cassandra cqlsh -u cassandra -p cassandra
     ```
     ```bash
     SELECT * FROM social_network.users;
