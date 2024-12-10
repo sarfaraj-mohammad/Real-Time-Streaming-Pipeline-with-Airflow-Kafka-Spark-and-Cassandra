@@ -9,7 +9,6 @@ def generate_random_user(url = 'https://randomuser.me/api/?results=1'):
     response = requests.get(url)
     user_details = response.json()
     user = user_details['results'][0]
-    # print(*user.items(), sep='\n')
 
     return user
 
@@ -37,14 +36,14 @@ def filter_user_details(user):
 def start_streaming():
     producer = KafkaProducer(bootstrap_servers=['kafka1:19092', 'kafka2:19093', 'kafka3:19094'])
 
-    end_time = time.time() + 20
+    end_time = time.time() + 50
 
     while time.time() < end_time:
         results = generate_random_user()
         data = filter_user_details(results)
         producer.send('random_users', json.dumps(data).encode('utf-8'))
         
-        time.sleep(10)
+        time.sleep(5)
     
 
 
