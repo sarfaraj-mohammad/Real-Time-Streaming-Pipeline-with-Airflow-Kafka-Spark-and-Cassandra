@@ -81,10 +81,16 @@ Ensure you have the following installed:
     - Check if a DAG named “random_users” is imported successfully.
     - If yes, start the DAG and run it. If there are errors (e.g., import errors), resolve them.
 
+    ![airflow](https://github.com/user-attachments/assets/8fb8b11b-1bdb-4419-b7a0-67e949cf9cd9)
+
+
 
 4.	Access the Kafka UI:
     - Go to Kafka UI at localhost:8888.
     - Look for the “random_users” topic and verify if messages are being pushed to this topic.
+
+    ![kafka](https://github.com/user-attachments/assets/1ea30f45-b442-4123-8995-6b7db7dde6c0)
+
 
 
 5.	Setup the Cassandra Keyspace and Tables:
@@ -104,6 +110,9 @@ Ensure you have the following installed:
     ```
     
     - Verify that the keyspace and table were created successfully.
+
+    ![cassandra_setup](https://github.com/user-attachments/assets/385809c0-a3de-4a66-aca4-cf8ce5d0995d)
+
 
 
 6.	Access the Spark CLI:
@@ -126,6 +135,9 @@ Ensure you have the following installed:
     ```bash
     SELECT * FROM social_network.users;
     ```
+
+    ![cassandra_data](https://github.com/user-attachments/assets/4ffd5aec-bdde-45c6-80fe-c85236dd639a)
+
 
 
 Key Features
