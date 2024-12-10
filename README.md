@@ -43,6 +43,8 @@ Ensure you have the following installed:
 1.  Clone the Repository
     ```bash
     git clone https://github.com/sarfaraj-mohammad/Real-Time-Streaming-Pipeline-with-Airflow-Kafka-Spark-and-Cassandra.git
+    ```
+    ```bash
     cd Real-Time-Streaming-Pipeline-with-Airflow-Kafka-Spark-and-Cassandra
     ```
     
@@ -120,6 +122,8 @@ Ensure you have the following installed:
     - Check if the user data has been successfully written to the Cassandra table:
     ```bash
     docker exec -it <cassandra-container-name> cqlsh -u cassandra -p cassandra
+    ```
+    ```bash
     SELECT * FROM social_network.users;
     ```
 
